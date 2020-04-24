@@ -1,0 +1,76 @@
+body{
+	background-image: url('background.svg');
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	overflow: auto;
+}
+
+.playground{
+	top: 5;
+	bottom: 5%;
+	background-color: #FFFFFF;
+	padding-right: 15px;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 90%;
+	position: absolute;
+	border-radius: 20px;
+	margin: auto;
+	display: grid;
+	grid-auto-flow: row;
+	grid-gap: 0.25rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.panel {
+	position: relative;
+	font-family: 'BeonRegular';
+	text-align: center;
+	font-size: 50px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 15px;
+	width: 100%;
+	font-size: 30px;
+}
+
+.grid {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	height: 450px;
+	width: 450px;
+	top: 0;
+	bottom: 0;
+	position: relative;
+}
+
+.card {
+	border-radius: 15%;
+	margin: auto;
+}
+.card:hover {
+	width: 110px;
+	height: 110px;
+	animation: ZoomUp 0.3s;
+}
+
+@keyframes ZoomUp {
+	from {
+		width: 100px;
+		height: 100px;
+	}
+	to {
+		width: 110px;
+		height: 110px;
+	}
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: opacity 500ms;
+}
